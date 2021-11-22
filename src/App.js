@@ -14,22 +14,26 @@ const App = () => {
           <h1 className='mt-3'>My Budget Planner</h1>    
               <div className='row mt-3'>
                   <div className='col-sm'>
-                    <Budget />
+                      <Budget />
                   </div>
                   <div className='col-sm'>
-                    <Remaining />
+                      <Remaining />
                   </div>
                   <div className='col-sm'>
-                    <ExpenseTotal />
+                      <ExpenseTotal />
                   </div>
               </div>
               <h1 className='mt-3'>Expenses</h1>
               <div className='row mt-3'>
-                  <ExpenseList />
+                  <div className='col-sm'>
+                      <ExpenseList />
+                  </div>
               </div>
-              <h1 className='mt3'>Add Expenses</h1>
-              <div className='row mt-3'>
-                  <AddExpenseForm />
+              <h1 className='mt-3'>Add Expenses</h1>
+              <div className='row'>
+                  <div className='col-sm'>
+                      <AddExpenseForm />
+                  </div>
               </div>
           </div>
       </AppProvider>    

@@ -6,7 +6,7 @@ const AddExpenseForm = () => {
   const { dispatch } = useContext(AppContext);
 
   const [name, setName] = useState('');
-  const [cost, setCost] = useState();
+  const [cost, setCost] = useState('');
 
   const onSubmit = (event) => {
       event.preventDefault();
@@ -20,7 +20,9 @@ const AddExpenseForm = () => {
           type:'ADD_EXPENSE',
           payload: expense,
         });
-            
+
+      setName('');
+      setCost('');            
   };
 
 	return (
